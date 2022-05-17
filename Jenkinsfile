@@ -17,13 +17,8 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-
-/*         stage('Building Docker Image') {
-            steps {
-                sh 'mvn dockerfile:build'
-            }
-        } */
     }
+
 
     post {
         always {
